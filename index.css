@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    min-height: 100vh;
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: hsl(225, 100%, 94%);
+    font-size: 18px;
+    position: relative;
+}
+.img{
+    height: 220px;
+    width: 200px;
+}
+
+.container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 400px;
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    max-height: 600px;
+}
+
+.text-content {
+    padding: 7%;
+    text-align: center;
+}
+
+.title {
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+    font-size: 21px;
+    margin-bottom: 20px; 
+}
+
+.text-content p.subtitle {
+    color: #8a8a8a;
+    margin-bottom: 25px;
+}
+
+.box {
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 12px;
+    display: flex;
+    padding: 15px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.plan-box {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.plan-box div {
+    margin-left: 20px;
+}
+
+.plan-box div h5{
+    font-weight: 700;
+    font-size: 14px;
+    color: hsl(240, 1%, 27%);
+}
+
+.plan-box div p {
+    font-size: 14px;
+    color: #8a8a8a;
+}
+
+.box a {
+    text-decoration: none;
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+    transition: color .3s ease;
+}
+
+.box a:hover {
+    text-decoration: none;
+    color: hsl(245, 75%, 52%);
+}
+
+.proceed{
+    
+    display: block;
+    text-decoration: none;
+    color: white;
+    background-color: hsl(245, 75%, 52%);
+    padding: 15px;
+    border-radius: 11px;
+    margin: 15px;
+    transition: background-color .3s ease;
+}
+
+a.proceed:hover {
+    background-color: hsl(224, 23%, 55%);
+}
+
+a.cancel{
+    color: hsl(224, 23%, 55%);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color .3s ease;
+}
+
+a.cancel:hover {
+    color: hsl(223, 47%, 23%);
+}
+
+@media only screen and (max-width: 426px) {
+    body {
+        background-image: url(./images/pattern-background-mobile.svg);
+        font-size: 14px;
+    }
+
+    .container {
+        max-width: 87%;
+    }
+
+    .title {
+        font-size: 23px;
+    }
+
+    div.box {
+        padding: 12px;
+    }
+
+    .plan-box div {
+        margin-left: 10px;
+    }
+
+    a.proceed,
+    a.cancel,
+    .box a {
+        font-size: 13px;
+    }
+
+    .text-content {
+        padding: 9% 7%;
+    }
+}
